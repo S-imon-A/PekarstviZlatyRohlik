@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="background-image-blur" src="images/Pozadí - foto.png" alt="">
+
+    <div id="page">
+        <img id="background-image" src="images/Pozadí - foto.png" alt="">
+        <img id="background-image-2" src="images/BakeryBackground.png" alt="">
+
+        <nav>
+            <img id="logo" src="images/ZR_logo 1.png" alt="">
+            <div>
+                <button>O nás</button>
+                <button>Novinky</button>
+                <button>Naše pečivo</button>
+                <button>Naše prodejny</button>
+                <button>Kontakt</button>
+
+                <div id="nav-div">
+                    <div>
+                        <img src="images/Uživatel.png" alt="">
+                        <img src="images/Hledání.png" alt="">
+                    </div>
+                    <div>
+                        <img src="images/FB.png" alt="">
+                        <img src="images/IG.png" alt="">
+                        <img src="images/TT.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <h1>
+            PEKAŘSTVÍ
+            <br>
+            <span>
+                <span>ZLATÝ</span> 
+                ROHLÍK
+            </span> 
+        </h1>
+
+        <h2>
+            ...křupavé potěšení každý den
+        </h2>
+
+        <button id="nase-pecivo">NAŠE PEČIVO</button>
+
+        <div id="game">
+            <div id="score-div">
+                <p id="score">0</p>
+                <img src="images/bread-25206_640.png" alt="">
+            </div>
+
+            <div id="player">
+                <img id="character" src="images/character_animation/0001.png" alt="">
+                <img id="shopping-cart" src="images/shopping_cart.png" alt="">
+                <div id="collider"></div>
+            </div>
+
+            <img id="init-logo-piece" src="images/LogoBread.png" alt="">
+            <img id="init-logo-piece-white" src="images/LogoBreadWhite.png" alt="">
+
+            <div class="pop-div">
+                <p class="pop">+1</p>
+                <img src="images/bread-25206_640.png" alt="">
+            </div>
+
+            <div id="reset-background-fade"></div>
+            <img id="reset-button" src="images/reset.png" alt="">
+        </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
