@@ -522,6 +522,25 @@ function setup(){
         }
     })
 
+    window.addEventListener("load", () => {
+        const imagesToPreload = []
+
+        for (let i = 0; i < 103; i++){
+            let strIndex = i.toString()
+
+            while (strIndex.length < 4){
+                strIndex = "0" + strIndex
+            }
+
+            imagesToPreload.push(`images/character_animation_push/${strIndex}.png`)
+        }
+
+        imagesToPreload.forEach(src => {
+            const img = new Image()
+            img.src = src
+        })
+    })
+
     window.requestAnimationFrame(mainLoop)
 }
 
